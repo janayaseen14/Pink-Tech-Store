@@ -157,18 +157,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.info-content {
     right: 0;
-    padding: 0 40px;
-    text-align: right;
-    padding: 0 40px 60px 150px;
-}
-
-.info-content {
-    right: 0;
-    padding: 0 40px;
     text-align: right;
     padding: 0 40px 60px 150px;
 }
