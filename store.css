@@ -1,0 +1,350 @@
+
+/* ── Reset store-body (override login centering) ── */
+.store-body {
+    display: block;
+    background-color: #FFF0F5;
+    min-height: 100vh;
+}
+
+/* ════════════════════════════
+   NAVBAR
+════════════════════════════ */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    height: 68px;
+    background-color: rgba(255, 240, 245, 0.92);
+    backdrop-filter: blur(16px);
+    border-bottom: 2px solid #FFCEE3;
+    box-shadow: 0 4px 20px #33333322;
+}
+
+.nav-logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #F13E93;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.nav-logo i {
+    color: #F13E93;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+}
+
+.nav-links a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #7a2e50;
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 99px;
+    transition: background 0.25s, color 0.25s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: linear-gradient(135deg, #F13E93, #c0006a);
+    color: #fff;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #FFCEE3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #7a2e50;
+    text-decoration: none;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.nav-icon-btn:hover {
+    background: #F13E93;
+    border-color: #F13E93;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.nav-icon-btn i {
+    color: inherit;
+}
+
+.cart-btn .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background: #F13E93;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFF0F5;
+}
+/* ════════════════════════════
+   HERO SECTION
+════════════════════════════ */
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 80px 80px 80px;
+    background: linear-gradient(160deg, #FFF0F5 0%, #FFE4EF 50%, #FFF0F5 100%);
+    gap: 40px;
+}
+
+/* The diagonal pink shape — same style as your login card */
+.hero-curved-shape {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    height: 120%;
+    width: 55%;
+    background: linear-gradient(45deg, #FFCEE3, #F13E93);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 520px;
+    animation: heroFadeIn 0.8s ease both;
+}
+
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+
+
+.hero-text h1 {
+    font-size: clamp(2.6rem, 4.5vw, 4.2rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: #333333;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.hero-text h1 em {
+    color: #F13E93;
+    font-style: italic;
+    font-family: 'Lilita One', cursive;
+    display: block;
+}
+
+.hero-text p {
+    font-size: 0.95rem;
+    color: #7a2e50;
+    line-height: 1.8;
+    margin-bottom: 36px;
+    font-weight: 300;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 44px;
+    flex-wrap: wrap;
+}
+
+/* Primary pink button */
+.btn-pink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #F13E93, #c0006a);
+    color: #fff;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(241, 62, 147, 0.35);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.btn-pink:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(241, 62, 147, 0.45);
+    color: #fff;
+}
+
+.btn-pink i { color: #fff; }
+
+/* Ghost pink button */
+.btn-outline-pink {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 28px;
+    background: transparent;
+    color: #F13E93;
+    border: 2px solid #F13E93;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.22s, color 0.22s;
+}
+
+.btn-outline-pink:hover {
+    background: #FFCEE3;
+    color: #F13E93;
+}
+
+/* Stats row */
+.hero-stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.stat strong {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #F13E93;
+    line-height: 1;
+}
+
+.stat span {
+    font-size: 0.72rem;
+    color: #7a2e50;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(241, 62, 147, 0.25);
+}
+
+/* Hero right image area */
+.hero-right {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+     animation: heroRightIn 0.8s 0.2s ease both; 
+}
+
+/* @keyframes heroRightIn {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+} */
+
+.hero-img-wrap {
+    width: 320px;
+    height: 320px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 30px 80px rgba(241, 62, 147, 0.22);
+    animation: float 5s ease-in-out infinite;
+}
+
+/* @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50%       { transform: translateY(-16px) rotate(1deg); }
+} */
+
+.hero-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Floating product mini-tags */
+.float-tag {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1.5px solid rgba(241, 62, 147, 0.2);
+    border-radius: 16px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 24px rgba(241, 62, 147, 0.14);
+    animation: floatTag ease-in-out infinite;
+    min-width: 170px;
+}
+
+.float-tag img {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.float-tag-top {
+    top: -12%;
+    right: -20%;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+.float-tag-bottom {
+    bottom: -8%;
+    left: -22%;
+    animation-duration: 5s;
+    animation-delay: -2s;
+}
+
+@keyframes floatTag {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-10px); }
+}
+
+.ftag-name {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #2d0a1a;
+    line-height: 1.3;
+}
+
+.ftag-price {
+    font-size: 0.72rem;
+    color: #F13E93;
+    font-weight: 700;
+    margin-top: 2px;
+}
