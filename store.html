@@ -18,7 +18,7 @@
 
 <body class="store-body">
 
-    <!-- NAVBAR -->
+    <!-- ═══ NAVBAR ═══ -->
     <nav class="navbar">
         <a href="#home" class="nav-logo">
             <i class="fa-solid fa-computer"></i>
@@ -41,30 +41,380 @@
         </div>
     </nav>
 
-    <!-- HERO  -->
+    <!-- ═══ HERO ═══ -->
     <section class="hero" id="home">
         <div class="hero-curved-shape"></div>
 
         <div class="hero-text">
-
             <h1>Tech Gear<br /><em>Made for Her.</em></h1>
-            <p>Keyboards, laptops, headphone & gaming setups — all curated with a feminine touch. Technology that
-                matches your style.</p>
+            <p>Keyboards, mice, laptops, headphones & gaming setups — all curated with a feminine touch. Technology that matches your style.</p>
             <div class="hero-btns">
                 <a href="#products" class="btn-pink">Shop Now &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-            
             </div>
-
         </div>
 
         <div class="hero-right">
             <div class="hero-img-wrap">
-                <img src="./pic/hero.jpg" alt="Featured Laptop" />
+                <img src="./pic/hero.jpg" alt="Featured" />
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <!-- <footer class="footer">
+
+    <!-- ═══ CATEGORIES ═══ -->
+    <div class="categories-section" id="products">
+        <div class="section-header">
+            <h2 class="section-title">What are you <em>looking for?</em></h2>
+        </div>
+        <div class="cat-pills">
+            <button class="pill active"><i class="fa-solid fa-border-all"></i> All</button>
+            <button class="pill"><i class="fa-solid fa-keyboard"></i> Keyboards</button>
+            <button class="pill"><i class="fa-solid fa-computer-mouse"></i> Mice</button>
+            <button class="pill"><i class="fa-solid fa-headphones"></i> Headphones</button>
+            <button class="pill"><i class="fa-solid fa-laptop"></i> Laptops</button>
+            <button class="pill"><i class="fa-solid fa-desktop"></i> Monitors</button>
+            <button class="pill"><i class="fa-solid fa-gamepad"></i> Gaming PC</button>
+        </div>
+    </div>
+
+    <!-- ═══ PRODUCTS GRID ═══ -->
+    <section class="products-section">
+        <div class="section-header">
+            <h2 class="section-title">Featured <em>Products</em></h2>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- 1 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/pc3.jpg" alt="Keychron K2 Pro">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Gaming PC</span>
+                    <h3 class="card-name">Pink Gaming PC — Sakura Style </h3>
+                    <p class="card-desc">RGB lighting & floral fans with sleek display panel.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$1299</span>
+                            <span class="price-was">$1550</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/keyboard1.jpg" alt="Sony WH-1000XM5">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Keyboards</span>
+                    <h3 class="card-name">Pink Cat Keyboard </h3>
+                    <p class="card-desc">Compact design with adorable cat detail & soft pastel keys.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$65</span>
+                            <span class="price-was">$90</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/headphone1.jpg" alt="MacBook Air M3">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Headphones</span>
+                    <h3 class="card-name">Pink Cat Headphone </h3>
+                    <p class="card-desc">Cute cat-ear design with soft cushions & clear mic.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$120</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/mouse2.jpg" alt="Logitech MX Master 3S">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Mice</span>
+                    <h3 class="card-name">Sakura Blossom Wireless Mouse </h3>
+                    <p class="card-desc">Smooth tracking on any surface with quiet clicks and elegant blossom design.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$79</span>
+                            <span class="price-was">$95</span>
+                        </div>
+                        <span class="card-stars">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/monitor1.jpg" alt="FlexiSpot E7">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">MONITORS</span>
+                    <h3 class="card-name">Crimson Shadow Gaming Monitor</h3>
+                    <p class="card-desc">Crisp visuals with smooth refresh rate and vibrant anime-inspired design.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$399</span>
+                            <span class="price-was">$499</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/GamingChair1.jpg" alt="Anne Pro 2">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">GAMING CHAIR</span>
+                    <h3 class="card-name">Sweet Cat Pro Gaming Chair</h3>
+                    <p class="card-desc">Ergonomic comfort with adjustable support and a cute cat-inspired design.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$379</span>
+                        </div>
+                        <span class="card-stars">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/pc2.jpg" alt="Crystal Pink PC">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Gaming PC</span>
+                    <h3 class="card-name">Pink Aesthetic Gaming Setup</h3>
+                    <p class="card-desc">Soft pink RGB setup with a cozy, clean vibe and glowing design.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$1500</span>
+                            <span class="price-was">$1800</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/keyboard3.jpg" alt="Razer DeathAdder V3">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">KEYBOARDS</span>
+                    <h3 class="card-name">Pink Aesthetic Keyboard Setup</h3>
+                    <p class="card-desc">Soft pink keyboard with glowing RGB and cute, cozy desk details.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$150</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/lap1.jpg" alt="iPhone Setup Pink">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">LAPTOPS</span>
+                    <h3 class="card-name">Blush Pink Laptop</h3>
+                    <p class="card-desc">Glossy pink design with a soft, minimal vibe.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$2299</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/mouse3.jpg" alt="Desk Setup Kit">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">MICE</span>
+                    <h3 class="card-name">Onikuma CW905 Gaming Mouse</h3>
+                    <p class="card-desc">Ergonomic gaming design with customizable DPI and high-precision tracking.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$99</span>
+                        </div>
+                        <span class="card-stars">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/headphone2.jpg" alt="Samsung Curved">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">HEADPHONES</span>
+                    <h3 class="card-name">BTINCOO K9 Cat Ear Headphone</h3>
+                    <p class="card-desc">Immersive audio with glowing cat ears and a detchable mic for the ultimate gaming experience.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$185</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/monitor2.jpg" alt="JBL Charge 5">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">monitors</span>
+                    <h3 class="card-name">Apple iMac 24" (M3 Chip)</h3>
+                    <p class="card-desc">The ultimate all-in-one desktop, combining an ultra-slim design with the powerhouse M3 chip for peak performance.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$1850</span>
+                        </div>
+                        <span class="card-stars">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/keyboard2.jpg" alt="Canon EOS R10">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">ketboards</span>
+                    <h3 class="card-name">Ducky Miya Pro Keyboards</h3>
+                    <p class="card-desc">High-end mechanical keyboard with custom PBT keycaps and a smart OLED display for real-time stats.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$245</span>
+                            <span class="price-was">$299</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/pc1.jpg" alt="RGB Setup Kit">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Gaming pc</span>
+                    <h3 class="card-name">Pink Sakura PC Build</h3>
+                    <p class="card-desc">A high-end custom gaming PC featuring a panoramic glass design and an integrated 4K touch screen.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$3450</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/lap2.jpg" alt="Minimal Desk Setup">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">labtops</span>
+                    <h3 class="card-name">HP Pavilion 15 Laptop</h3>
+                    <p class="card-desc">A sleek and powerful laptop designed for smooth productivity and vibrant entertainment in a stylish ultra-portable frame.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$1050</span>
+                        </div>
+                        <span class="card-stars">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="product-card">
+                <button class="wish-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="card-img">
+                    <img src="./pic/mouse1.jpg" alt="AirPods Max">
+                    <div class="card-overlay"><a href="#" class="quick-btn">+ Add to Cart</a></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Mice</span>
+                    <h3 class="card-name">Redragon M601 RGB Gaming Mouse</h3>
+                    <p class="card-desc">High-performance wired gaming mouse with programmable buttons and dynamic RGB backlighting.</p>
+                    <div class="card-footer">
+                        <div class="card-pricing">
+                            <span class="price-now">$549</span>
+                        </div>
+                        <span class="card-stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer" id="about">
         <div class="footer-container">
             <div class="row">
                 <div class="column">
@@ -74,7 +424,7 @@
                         <li><a href="#">Mice</a></li>
                         <li><a href="#">Monitors</a></li>
                         <li><a href="#">Laptops</a></li>
-                        <li><a href="#">Pc</a></li>
+                        <li><a href="#">PC</a></li>
                         <li><a href="#">Gaming Chairs</a></li>
                     </ul>
                 </div>
@@ -96,7 +446,6 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-
                 <div class="column social">
                     <h3>Follow Us</h3>
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -105,7 +454,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
-</body>
+    </footer>
 
+</body>
 </html>
