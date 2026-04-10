@@ -213,7 +213,8 @@ body {
     .signUp-container .curved-shape {
         display: none;
     }
-    /* input {
+
+    input {
         padding-right: 10px;
-    } */
+    }
 }
