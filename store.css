@@ -554,7 +554,7 @@
     text-transform: uppercase;
     margin-top: 5%;
     font-size: 55px;
-    text-shadow: 2px 2px 9px #F13E93;
+    text-shadow: 3px 3px 10px #F13E93;
 }
 
 .subscription p {
@@ -599,11 +599,7 @@
     font-weight: 200;
     font-size: 15px;
 }
-@media (min-width: 900px){
-    .subscription {
-        height: 90vh;
-    }
-}
+
 @media (max-width: 899px) {
     .subscription {
         padding: 40px 20px;
@@ -620,9 +616,10 @@
 }
 
 @media (max-width: 574px) {
-     .subscription {
+    .subscription {
         text-align: center;
     }
+
     .subscription form {
         width: 100%;
     }
