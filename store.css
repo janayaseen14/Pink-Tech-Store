@@ -599,16 +599,16 @@
     font-weight: 200;
     font-size: 15px;
 }
-@media (min-width: 770px){
+@media (min-width: 900px){
     .subscription {
-        height: 100vh;
+        height: 90vh;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 899px) {
     .subscription {
         padding: 40px 20px;
-        height: 45vh;
     }
+
 
     .subscription h3 {
         font-size: 32px;
@@ -617,13 +617,12 @@
     .subscription p {
         font-size: 18px;
     }
-
-    /* .subscription form {
-        margin: 10px auto;
-    } */
 }
 
 @media (max-width: 574px) {
+     .subscription {
+        text-align: center;
+    }
     .subscription form {
         width: 100%;
     }
