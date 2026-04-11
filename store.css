@@ -545,7 +545,6 @@
     background-size: cover;
     background-position: center;
     padding: 50px 10%;
-    justify-content: center;
 }
 
 .subscription h3 {
@@ -600,18 +599,15 @@
     font-weight: 200;
     font-size: 15px;
 }
-
-@media (min-width: 769px) {
+@media (min-width: 770px){
     .subscription {
         height: 100vh;
     }
 }
-
 @media (max-width: 768px) {
     .subscription {
-        text-align: center;
         padding: 40px 20px;
-        height: 80vh;
+        height: 45vh;
     }
 
     .subscription h3 {
@@ -622,20 +618,14 @@
         font-size: 18px;
     }
 
-    .subscription form {
+    /* .subscription form {
         margin: 10px auto;
-    }
+    } */
 }
 
-@media (max-width: 410px) {
-    .subscription {
-        height: 80vh;
-    }
-
+@media (max-width: 574px) {
     .subscription form {
         width: 100%;
-        margin: 10px auto;
-
     }
 
     .subscription input {
