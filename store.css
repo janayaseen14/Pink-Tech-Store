@@ -541,7 +541,6 @@
 ════════════════════════════ */
 .subscription {
     width: 100%;
-    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(./pic/email2.jpg);
     background-size: cover;
     background-position: center;
@@ -602,10 +601,17 @@
     font-size: 15px;
 }
 
+@media (min-width: 769px) {
+    .subscription {
+        height: 100vh;
+    }
+}
+
 @media (max-width: 768px) {
     .subscription {
         text-align: center;
         padding: 40px 20px;
+        height: 100vh;
     }
 
     .subscription h3 {
@@ -617,9 +623,23 @@
     }
 
     .subscription form {
-        width: 100%;
-        display: flex;
+        margin: 10px auto;
+    }
+}
 
+@media (max-width: 410px) {
+    .subscription {
+        height: 80vh;
+    }
+
+    .subscription form {
+        width: 100%;
+        margin: 10px auto;
+
+    }
+
+    .subscription input {
+        font-size: 13px;
     }
 }
 
